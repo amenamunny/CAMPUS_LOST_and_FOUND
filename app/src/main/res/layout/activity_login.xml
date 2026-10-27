@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F6"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Logo / Icon -->
+        <TextView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="35dp"
+            android:background="#EAF3EB"
+            android:gravity="center"
+            android:text="🔐"
+            android:textSize="34sp" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Welcome Back 👋"
+            android:textColor="#1F5C45"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Login to continue to Campus Lost &amp; Found"
+            android:textColor="#68756E"
+            android:textSize="14sp"
+            android:gravity="center" />
+
+        <!-- Email Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="📧  Email"
+            android:textColor="#183E31"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/etLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Enter your email"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#183E31"
+            android:textColorHint="#87958E"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress" />
+
+        <!-- Password Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="🔑  Password"
+            android:textColor="#183E31"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/etLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Enter your password"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#183E31"
+            android:textColorHint="#87958E"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:autofillHints="password" />
+
+        <!-- Forgot Password -->
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:text="Forgot Password?"
+            android:textColor="#1F5C45"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#1F5C45"
+            android:text="🔐  Login"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="false" />
+
+        <!-- Register -->
+        <TextView
+            android:id="@+id/tvGoToRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:padding="16dp"
+            android:text="✨  Don't have an account? Register"
+            android:textColor="#28704D"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</ScrollView>

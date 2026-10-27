@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Backpack main body -->
+    <path
+        android:fillColor="#183B63"
+        android:pathData="M30,38
+            C30,27 38,20 54,20
+            C70,20 78,27 78,38
+            L82,82
+            C82,87 78,90 73,90
+            L35,90
+            C30,90 26,87 26,82
+            Z" />
+
+    <!-- Top handle -->
+    <path
+        android:fillColor="#183B63"
+        android:pathData="M41,27
+            L41,20
+            C41,14 46,10 54,10
+            C62,10 67,14 67,20
+            L67,27
+            L61,27
+            L61,20
+            C61,17 58,15 54,15
+            C50,15 47,17 47,20
+            L47,27
+            Z" />
+
+    <!-- Front pocket -->
+    <path
+        android:fillColor="#24517F"
+        android:pathData="M34,57
+            C34,53 37,50 41,50
+            L67,50
+            C71,50 74,53 74,57
+            L74,74
+            C74,78 71,81 67,81
+            L41,81
+            C37,81 34,78 34,74
+            Z" />
+
+    <!-- Pocket highlight -->
+    <path
+        android:fillColor="#5E86AA"
+        android:pathData="M42,57
+            L66,57
+            C68,57 69,59 69,61
+            L69,64
+            L39,64
+            L39,61
+            C39,59 40,57 42,57
+            Z" />
+
+    <!-- Small center badge -->
+    <path
+        android:fillColor="#E8B66A"
+        android:pathData="M49,39
+            L54,34
+            L59,39
+            L54,44
+            Z" />
+
+    <!-- Left strap -->
+    <path
+        android:fillColor="#102F50"
+        android:pathData="M26,40
+            C21,43 19,50 19,58
+            L19,76
+            C19,80 22,83 26,83
+            L29,83
+            L29,76
+            L26,76
+            L26,57
+            C26,51 28,47 32,45
+            Z" />
+
+    <!-- Right strap -->
+    <path
+        android:fillColor="#102F50"
+        android:pathData="M82,40
+            C87,43 89,50 89,58
+            L89,76
+            C89,80 86,83 82,83
+            L79,83
+            L79,76
+            L82,76
+            L82,57
+            C82,51 80,47 76,45
+            Z" />
+
+</vector>

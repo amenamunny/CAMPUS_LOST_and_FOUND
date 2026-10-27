@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F6"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="‹"
+                android:textColor="#1F5C45"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="My Profile"
+                android:textColor="#1F5C45"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingStart="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👤"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+
+        <!-- Profile Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="1dp"
+            app:strokeColor="#E1E9E3"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Avatar -->
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#EAF3EB"
+                    android:gravity="center"
+                    android:text="👤"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="Account Information"
+                    android:textColor="#1F5C45"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Name -->
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="#F5F8F5"
+                    android:padding="13dp"
+                    android:text="Name"
+                    android:textColor="#183E31"
+                    android:textSize="15sp" />
+
+                <!-- Email -->
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="#F5F8F5"
+                    android:padding="13dp"
+                    android:text="Email"
+                    android:textColor="#183E31"
+                    android:textSize="15sp" />
+
+                <!-- Department -->
+                <TextView
+                    android:id="@+id/tvDepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="#F5F8F5"
+                    android:padding="13dp"
+                    android:text="Department"
+                    android:textColor="#183E31"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- My Reports -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="📋  My Reports"
+            android:textColor="#1F5C45"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+
+        <!-- My Lost Reports -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btnMyLostReports"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="1dp"
+            app:strokeColor="#E1E9E3"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎒"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="12dp"
+                    android:text="My Lost Reports"
+                    android:textColor="#183E31"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="›"
+                    android:textColor="#28704D"
+                    android:textSize="28sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- My Found Reports -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btnMyFoundReports"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="18dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="1dp"
+            app:strokeColor="#E1E9E3"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎁"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="12dp"
+                    android:text="My Found Reports"
+                    android:textColor="#183E31"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="›"
+                    android:textColor="#28704D"
+                    android:textSize="28sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- Logout -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:backgroundTint="#EAF3EB"
+            android:text="🚪  Logout"
+            android:textAllCaps="false"
+            android:textColor="#B23B3B"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</ScrollView>

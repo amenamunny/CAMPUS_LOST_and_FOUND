@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F9F9F6">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Go back"
+            android:text="‹"
+            android:textColor="#1F5C45"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search Items"
+                android:textColor="#1F5C45"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find lost &amp; found items"
+                android:textColor="#68756E"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔍"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+    <!-- Search Box -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="1dp"
+        app:strokeColor="#DDE8E0"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔍"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/etSearchAll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="Search lost or found items..."
+                android:paddingStart="12dp"
+                android:paddingEnd="4dp"
+                android:singleLine="true"
+                android:textColor="#183E31"
+                android:textColorHint="#87958E"
+                android:textSize="14sp"
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                android:importantForAutofill="no" />
+
+            <!-- Clear Search Button -->
+            <TextView
+                android:id="@+id/btnClearSearch"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Clear search"
+                android:text="✕"
+                android:textColor="#68756E"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Search Result Count -->
+    <TextView
+        android:id="@+id/tvSearchResultCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="📊 Loading results..."
+        android:textColor="#68756E"
+        android:textSize="12sp" />
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="20dp">
+
+            <!-- Lost Section -->
+            <TextView
+                android:id="@+id/tvLostTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="🎒 Lost Items"
+                android:textColor="#1F5C45"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerSearchLost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <!-- Found Section -->
+            <TextView
+                android:id="@+id/tvFoundTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:text="🎁 Found Items"
+                android:textColor="#1F5C45"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerSearchFound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <!-- Empty State -->
+            <TextView
+                android:id="@+id/tvNoResults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="40dp"
+                android:text="📭&#10;&#10;No matching items found.&#10;Try another keyword!"
+                android:textColor="#68756E"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

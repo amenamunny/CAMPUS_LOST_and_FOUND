@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F6"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="‹"
+                android:textColor="#1F5C45"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Report Lost"
+                android:textColor="#1F5C45"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:paddingStart="8dp" />
+
+        </LinearLayout>
+
+        <!-- Illustration -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Lost Item"
+            android:textColor="#28704D"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#EAF3EB" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lost Item Information"
+            android:textColor="#183E31"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Item Name -->
+        <EditText
+            android:id="@+id/etItemName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Item Name"
+            android:textColor="#183E31"
+            android:textColorHint="#87958E"
+            android:padding="15dp"
+            android:inputType="text"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Category -->
+        <EditText
+            android:id="@+id/etCategory"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Category"
+            android:textColor="#183E31"
+            android:textColorHint="#87958E"
+            android:padding="15dp"
+            android:inputType="text"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Description -->
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Description"
+            android:textColor="#183E31"
+            android:textColorHint="#87958E"
+            android:padding="15dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Location -->
+        <EditText
+            android:id="@+id/etLocation"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Lost Location"
+            android:textColor="#183E31"
+            android:textColorHint="#87958E"
+            android:padding="15dp"
+            android:inputType="text"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Date -->
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Lost Date"
+            android:textColor="#183E31"
+            android:textColorHint="#87958E"
+            android:padding="15dp"
+            android:inputType="text"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Contact -->
+        <EditText
+            android:id="@+id/etContact"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Contact Information"
+            android:textColor="#183E31"
+            android:textColorHint="#87958E"
+            android:padding="15dp"
+            android:inputType="phone"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Submit -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Submit Lost Report"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#28704D"
+            android:layout_marginBottom="25dp" />
+
+    </LinearLayout>
+
+</ScrollView>

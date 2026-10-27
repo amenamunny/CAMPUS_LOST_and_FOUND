@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F6"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Logo / Icon -->
+        <TextView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="28dp"
+            android:background="#EAF3EB"
+            android:gravity="center"
+            android:text="📝"
+            android:textSize="34sp" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Create Account ✨"
+            android:textColor="#1F5C45"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Join Campus Lost &amp; Found"
+            android:textColor="#68756E"
+            android:textSize="14sp"
+            android:gravity="center" />
+
+        <!-- Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="👤  Full Name"
+            android:textColor="#183E31"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etRegisterName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Enter your full name"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#183E31"
+            android:textColorHint="#87958E"
+            android:textSize="14sp"
+            android:inputType="textPersonName" />
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="📧  Email"
+            android:textColor="#183E31"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etRegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Enter your email"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#183E31"
+            android:textColorHint="#87958E"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="🔑  Password"
+            android:textColor="#183E31"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Create a password"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#183E31"
+            android:textColorHint="#87958E"
+            android:textSize="14sp"
+            android:inputType="textPassword" />
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#1F5C45"
+            android:text="📝  Create Account"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="false" />
+
+        <!-- Login -->
+        <TextView
+            android:id="@+id/tvGoToLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="16dp"
+            android:text="🔐  Already have an account? Login"
+            android:textColor="#28704D"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>

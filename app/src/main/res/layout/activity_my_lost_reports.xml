@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="#F9F9F6"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="‹"
+            android:textColor="#1F5C45"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="My Lost Reports"
+            android:textColor="#1F5C45"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:paddingStart="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+
+    <!-- Small description -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋  Reports you have submitted"
+        android:textColor="#68756E"
+        android:textSize="13sp"
+        android:paddingTop="4dp"
+        android:paddingBottom="6dp" />
+
+
+    <!-- No Reports -->
+    <TextView
+        android:id="@+id/tvNoReports"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎒\n\nYou have not submitted any lost reports yet."
+        android:textColor="#68756E"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:padding="30dp"
+        android:visibility="gone" />
+
+
+    <!-- Reports -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:id="@+id/reportsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" />
+
+    </ScrollView>
+
+</LinearLayout>

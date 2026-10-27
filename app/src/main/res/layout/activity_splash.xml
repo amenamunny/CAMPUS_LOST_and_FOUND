@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDF8">
+
+    <!-- Main Splash Content -->
+    <LinearLayout
+        android:id="@+id/splashContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="30dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/ivSplashLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/campus_logo_splash"
+            android:scaleType="fitCenter"
+            android:contentDescription="Campus Lost and Found Logo" />
+
+        <!-- App Name -->
+        <TextView
+            android:id="@+id/tvSplashTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Campus Lost &amp; Found"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#173F3F"
+            android:gravity="center" />
+
+        <!-- Tagline -->
+        <TextView
+            android:id="@+id/tvSplashTagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Find it. Report it. Return it."
+            android:textSize="15sp"
+            android:textColor="#555555"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+    <!-- Black Fade Overlay -->
+    <View
+        android:id="@+id/blackOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:alpha="0" />
+
+</FrameLayout>
